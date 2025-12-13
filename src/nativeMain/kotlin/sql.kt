@@ -91,6 +91,12 @@ var KEYMAP_146_566 = """
     ON CONFLICT(key) DO UPDATE SET value0 = excluded.value0;
 """.trimIndent()
 
+var KEYMAP_176 = """
+    INSERT INTO key_map_configs_cache_official (key, value0, value1, value2, value3, value4)
+    VALUES ('keymap_data.unlogin.com.activision.callofduty.shooter.146.1765593240066', '${KEYMAP_CONTENT_176.trimIndent()}', '', '', '', '') 
+    ON CONFLICT(key) DO UPDATE SET value0 = excluded.value0;
+""".trimIndent()
+
 fun reinitBR(keys: List<KeyData>) {
     KEYMAP_146_175 = """
     INSERT INTO key_map_configs_cache_official (key, value0, value1, value2, value3, value4)
@@ -101,6 +107,14 @@ fun reinitBR(keys: List<KeyData>) {
     KEYMAP_146_566 = """
     INSERT INTO key_map_configs_cache_official (key, value0, value1, value2, value3, value4)
     VALUES ('offcial_keymap_data2.com.activision.callofduty.shooter.146.566635', '${KEYMAP_CONTENT_146_566.trimIndent().reMap(keys)}', '17175', '', '', '') 
+    ON CONFLICT(key) DO UPDATE SET value0 = excluded.value0;
+""".trimIndent()
+}
+
+fun reinitDMZ(keys: List<KeyData>) {
+    KEYMAP_176 = """
+    INSERT INTO key_map_configs_cache_official (key, value0, value1, value2, value3, value4)
+    VALUES ('keymap_data.unlogin.com.activision.callofduty.shooter.146.1765593240066', '${KEYMAP_CONTENT_176.trimIndent().reMap(keys)}', '', '', '', '') 
     ON CONFLICT(key) DO UPDATE SET value0 = excluded.value0;
 """.trimIndent()
 }

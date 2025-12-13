@@ -47,6 +47,7 @@ object DatabaseManager {
             sqlite_exec(it, KEYMAP_145_145)
             sqlite_exec(it, KEYMAP_145_566)
             sqlite_exec(it, KEYMAP_145_175)
+            sqlite_exec(it, KEYMAP_176)
             sqlite_exec(it, KEYMAP_146)
             sqlite_exec(it, KEYMAP_146_146)
             sqlite_exec(it, KEYMAP_146_566)

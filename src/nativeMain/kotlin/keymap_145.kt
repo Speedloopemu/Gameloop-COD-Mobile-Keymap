@@ -26,6 +26,7 @@ const val KEYMAP_CONTENT_145_175 = """
 </KeyMapping>
 <KeyMapping ItemName="%spaceName" Point_X="0.958008" Point_Y="0.675347" Description="跳跃" Remark="" MiniVisiable="true" MiniDisable="false" AsciiCode="%spaceCode">
 <SwitchOperation Description="下车" EnableSwitch="GetOutCar" DisableSwitch="XBtn|MapOpenFlag|InSetUp" Point_X="0.942187" Point_Y="0.670000"/>
+<SwitchOperation Description="" EnableSwitch="FlyDown" DisableSwitch="ReturnSetUp|InSetUp|Jump" Point_X="0.739375" Point_Y="0.587778" HideTips="1"/>
 <SwitchOperation Description="跳跃" EnableSwitch="Jump" DisableSwitch="ReturnSetUp" HideTips="1"/>
 <SwitchOperation Description="跳跃" EnableSwitch="SetUp" DisableSwitch="InSetUp|ReturnSetUp|Knife2|HangUp" Point_X="0.938008" Point_Y="0.675347" HideTips="1"/>
 </KeyMapping>
@@ -119,6 +120,7 @@ const val KEYMAP_CONTENT_145_175 = """
 <KeyMapping ItemName="%ctrlName" Point_X="0.951562" Point_Y="0.825000" Description="趴下" Remark="" MiniVisiable="true" MiniDisable="false" AsciiCode="%ctrlCode">
 <SwitchOperation Description="趴下" EnableSwitch="Fall" DisableSwitch="InSetUp" Point_X="0.967057" Point_Y="0.940104" HideTips="1"/>
 <SwitchOperation Description="取消趴下" EnableSwitch="CancelFall" DisableSwitch="InSetUp" Point_X="0.967057" Point_Y="0.940104" HideTips="1"/>
+<SwitchOperation Description="" EnableSwitch="FlyDown" DisableSwitch="InSetUp" Point_X="0.739375" Point_Y="0.822222" HideTips="1"/>
 <SwitchOperation Description="" EnableSwitch="SetUp" DisableSwitch="XBtn|MapOpenFlag|InSetUp" Point_X="0.950625" Point_Y="0.884444" HideTips="1"/>
 </KeyMapping>
 <KeyMapping ItemName="%zName" Point_X="0.767969" Point_Y="0.220833" Description="语音按住" Remark="" MiniVisiable="false" MiniDisable="false" AsciiCode="%zCode">

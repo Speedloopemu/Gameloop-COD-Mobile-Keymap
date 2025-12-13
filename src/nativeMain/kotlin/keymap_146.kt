@@ -64,9 +64,8 @@ const val KEYMAP_CONTENT_146_175 = """
 <SwitchOperation Description="换2号武器" EnableSwitch="Reload" DisableSwitch="MapOpenFlag|ReturnSetUp|Whistle|FlyDown|Whistling|XBtn|CDX" Point_X="0.539063" Point_Y="0.862500"/>
 <SwitchOperation Description="换2号武器" EnableSwitch="SetUp" DisableSwitch="MapOpenFlag|ReturnSetUp|Whistle|FlyDown|Whistling|XBtn|CDX" Point_X="0.539063" Point_Y="0.862500"/>
 </KeyMapping>
-<KeyMapping ItemName="%bName" Point_X="0.445313" Point_Y="0.788889" Description="单发/连发" Remark="" MiniVisiable="false" MiniDisable="false" AsciiCode="%bCode">
-<SwitchOperation Description="单发/连发" EnableSwitch="FireMode1" DisableSwitch="XBtn|MapOpenFlag|ReturnSetUp|CDX" Point_X="0.445313" Point_Y="0.788889"/>
-<SwitchOperation Description="单发/连发" EnableSwitch="FireMode2" DisableSwitch="XBtn|MapOpenFlag|InSetUp|ReturnSetUp|CDX" Point_X="0.582812" Point_Y="0.794444"/>
+<KeyMapping ItemName="%bName" Point_X="0.685937" Point_Y="0.718056" Description="单发/连发" Remark="" MiniVisiable="false" MiniDisable="false" AsciiCode="%bCode">
+<SwitchOperation Description="" EnableSwitch="SetUp" DisableSwitch="XBtn|MapOpenFlag|ReturnSetUp|CDX" Point_X="0.685937" Point_Y="0.718056"/>
 </KeyMapping>
 <KeyMapping ItemName="%cName" Point_X="0.854492" Point_Y="0.918403" Description="下蹲" Remark="" MiniVisiable="false" MiniDisable="false" AsciiCode="%cCode">
 <SwitchOperation Description="下蹲" EnableSwitch="Squat" DisableSwitch="XBtn|MapOpenFlag|ReturnSetUp" Point_X="0.854492" Point_Y="0.918403" HideTips="1"/>
@@ -518,6 +517,58 @@ const val KEYMAP_CONTENT_146_566 = """
 </KeyMappingEx>
 """
 
+const val KEYMAP_CONTENT_176 = """
+<KeyMapSolution SolutionID="{&quot;id&quot;:&quot;1765593240066&quot;,&quot;type&quot;:0}" SolutionName="DMZ" InputType="1" SilentUpdate="0">
+<KeyMapping ItemName="Right Click" Point_X="0.850729" Point_Y="0.596667" Description="右键开镜" MiniVisiable="false" MiniDisable="false" ShowOnLockAsciiCode="192" AsciiCode="-2">
+<SwitchOperation Description="" Point_X="0.850729" Point_Y="0.596667" HideTips="1"/>
+</KeyMapping>
+<KeyMapping ItemName="%tabName" Point_X="0.254026" Point_Y="0.907552" Description="字母键划线" MiniVisiable="true" MiniDisable="false" AsciiCode="%tabCode"/>
+<KeyMapping ItemName="%ctrlName" Point_X="0.956808" Point_Y="0.936198" Description="字母键" MiniVisiable="false" MiniDisable="false" AsciiCode="%ctrlCode">
+<SwitchOperation Description="" Point_X="0.956808" Point_Y="0.936198" HideTips="1"/>
+</KeyMapping>
+<KeyMapping ItemName="%spaceName" Point_X="0.967789" Point_Y="0.710938" Description="字母键划线" MiniVisiable="true" MiniDisable="false" AsciiCode="%spaceCode">
+<SwitchOperation Description="" Point_X="0.967789" Point_Y="0.710938" HideTips="1"/>
+</KeyMapping>
+<KeyMapping ItemName="%1Name" Point_X="0.443631" Point_Y="0.863281" Description="字母键划线" MiniVisiable="true" MiniDisable="false" AsciiCode="%1Code"/>
+<KeyMapping ItemName="%2Name" Point_X="0.551245" Point_Y="0.876302" Description="" MiniVisiable="false" MiniDisable="false" AsciiCode="%2Code">
+<SwitchOperation Description="" Point_X="0.551245" Point_Y="0.876302"/>
+</KeyMapping>
+<KeyMappingEx ItemName="%4Name" Point_X="0.316984" Point_Y="0.906250" Description="字母键划线" MiniVisiable="false" MiniDisable="false" NoDelete="1" SpecialFunc="0" OpGuidClass="0" InUseDisableView="1" Type="KeyMove" Offset="0.490000" Click_X="0.347731" Click_Y="0.861979" Click_Offset="0.450000" AsciiCode="%4Code" Cancel_X="0.000000" Cancel_Y="0.000000" Click_Left="1" ReleaseNow="0" Center_X="0.000000" Center_Y="0.000000" StopMoving="0" NeedPressed="1" Center_XY_Disable="1" Delay="0">
+<SwitchOperation Description="" Point_X="0.316984" Point_Y="0.906250" HideTips="1"/>
+</KeyMappingEx>
+<KeyMapping ItemName="%cName" Point_X="0.858712" Point_Y="0.947917" Description="字母键" MiniVisiable="true" MiniDisable="false" AsciiCode="%cCode">
+<SwitchOperation Description="" Point_X="0.858712" Point_Y="0.947917" HideTips="1"/>
+</KeyMapping>
+<KeyMapping ItemName="%eName" Point_X="0.967057" Point_Y="0.373698" Description="字母键" MiniVisiable="true" MiniDisable="false" AsciiCode="%eCode"/>
+<KeyMapping ItemName="%fName" Point_X="0.676428" Point_Y="0.574219" Description="字母键" MiniVisiable="true" MiniDisable="false" AsciiCode="%fCode"/>
+<KeyMapping ItemName="%gName" Point_X="0.551977" Point_Y="0.639323" Description="字母键" MiniVisiable="true" MiniDisable="false" AsciiCode="%gCode"/>
+<KeyMapping ItemName="%hName" Point_X="0.718887" Point_Y="0.542969" Description="字母键划线" MiniVisiable="true" MiniDisable="false" AsciiCode="%hCode"/>
+<KeyMapping ItemName="%escName" Point_X="0.770132" Point_Y="0.057292" Description="字母键" MiniVisiable="true" MiniDisable="false" AsciiCode="%escCode"/>
+<KeyMapping ItemName="%mName" Point_X="0.964861" Point_Y="0.045573" Description="字母键划线" MiniVisiable="true" MiniDisable="false" AsciiCode="%mCode"/>
+<KeyMapping ItemName="%rName" Point_X="0.766471" Point_Y="0.932292" Description="字母键" MiniVisiable="true" MiniDisable="false" AsciiCode="%rCode"/>
+<KeyMapping ItemName="%f4Name" Point_X="0.721083" Point_Y="0.055990" Description="字母键划线" MiniVisiable="true" MiniDisable="false" AsciiCode="%f4Code"/>
+<KeyMapping ItemName="%oName" Point_X="0.775256" Point_Y="0.312500" Description="字母键" MiniVisiable="true" MiniDisable="false" AsciiCode="%oCode"/>
+<KeyMapping ItemName="%iName" Point_X="0.871889" Point_Y="0.308594" Description="字母键划线" MiniVisiable="true" MiniDisable="false" AsciiCode="%iCode"/>
+<KeyMappingEx ItemName="WASD" Point_X="0.163982" Point_Y="0.781250" Description="移动" MiniVisiable="false" MiniDisable="false" HideTipsAlways="1" Type="CrossKey" UP_AsciiCode="87" DOWN_AsciiCode="83" LEFT_AsciiCode="65" RIGHT_AsciiCode="68" Offset="0.070258" ShiftOffset="0.100000" Speed="0.000000">
+<SwitchOperation Description=""/>
+</KeyMappingEx>
+<KeyMappingEx ItemName="Left Mouse Button" Point_X="0.049048" Point_Y="0.519531" Description="开火" MiniVisiable="false" MiniDisable="false" Type="LClick" LOCK_AsciiCode="%lockMouseCode">
+<SwitchOperation Description="" Point_X="0.049048" Point_Y="0.519531" HideTips="1"/>
+</KeyMappingEx>
+<KeyMappingEx ItemName="Move with Mouse" Point_X="0.663250" Point_Y="0.354167" Description="视角" MiniVisiable="false" MiniDisable="false" HideTipsAlways="1" Raw="1" Type="RClick" Offset="0.450000" LOCK_AsciiCode="%lockMouseCode" AsciiCode="%lockMouseCode" MouseResetTime="1000" Sensi_X="1.000000" Sensi_Y="1.000000">
+<SwitchOperation Description=""/>
+</KeyMappingEx>
+<KeyMappingEx ItemName="%3Name" Point_X="0.666911" Point_Y="0.894531" Description="" MiniVisiable="false" MiniDisable="false" NoDelete="1" SpecialFunc="0" OpGuidClass="0" InUseDisableView="1" Type="KeyMove" Offset="0.490000" Click_X="0.347731" Click_Y="0.861979" Click_Offset="0.450000" AsciiCode="%3Code" Cancel_X="0.000000" Cancel_Y="0.000000" Click_Left="1" ReleaseNow="0" Center_X="0.000000" Center_Y="0.000000" StopMoving="0" NeedPressed="1" Center_XY_Disable="1" Delay="0">
+<SwitchOperation Description="" Point_X="0.666911" Point_Y="0.894531"/>
+</KeyMappingEx>
+<KeyMappingEx HideTipsAlways="1" Click_Y="0.855556" ItemName="滚轮切枪" Point_Y="0.863889" Type="WheelClick" Click_X="0.428125" Point_X="0.546094" Description="滚轮切枪">
+<SwitchOperation Description="" EnableSwitch="SetUp" DisableSwitch="XBtn|MapOpenFlag|ReturnSetUp" />
+</KeyMappingEx>
+<KeyMapping ItemName="%vName" Point_X="0.824305" Point_Y="0.552083" Description="字母键" MiniVisiable="true" MiniDisable="false" AsciiCode="%vCode"/>
+<KeyMapping ItemName="%tName" Point_X="0.693265" Point_Y="0.716146" Description="字母键" MiniVisiable="true" MiniDisable="false" AsciiCode="%tCode"/>
+</KeyMapSolution>
+"""
+
 const val KEYMAP_CONTENT_146_146 = """
 <KeyMapSolution SolutionName="官方默认方案">
   <KeyMappingEx Point_Y="0.313889" AsciiCode="113" HideTipsAlways="0" ItemName="F2" Point_X="0.818750" Description="快速说话" Type="MultiPoint" InUseDisableView="1">
@@ -852,6 +903,11 @@ const val KEYMAP_CONTENT_146 = """
                 "sourceType": 1,
                 "versionId": "12417"
             }
+        },
+        "1765593240066": {
+            "inputType": 1,
+            "solutionId": "1765593240066",
+            "solutionName": "DMZ"
         }
     }
 }

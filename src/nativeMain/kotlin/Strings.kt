@@ -71,7 +71,16 @@ const val br_caps_key = "br_caps_key"
 const val br_alt_key = "br_alt_key"
 const val br_3_key = "br_3_key"
 const val br_4_key = "br_4_key"
-const val help = "help"
+const val dmz_tab_key = "dmz_tab_key"
+const val dmz_ctrl_key = "dmz_ctrl_key"
+const val dmz_space_key = "dmz_space_key"
+const val dmz_c_key = "dmz_c_key"
+const val dmz_e_key = "dmz_e_key"
+const val dmz_f_key = "dmz_f_key"
+const val dmz_h_key = "dmz_h_key"
+const val dmz_g_key = "dmz_g_key"
+const val dmz_v_key = "dmz_v_key"
+const val dmz_t_key = "dmz_t_key"
 const val lang_en = "lang_en"
 const val lang_hu = "lang_hu"
 
@@ -122,20 +131,30 @@ val en = mapOf(
     gd_r_key to "Ability 3",
     lock_mouse_key to "Lock mouse to screen",
     br_tab_key to "Backpack open/close",
+    dmz_tab_key to "Backpack",
     br_space_key to "Jump/Brake",
+    dmz_space_key to "Jump",
     br_caps_key to "Execution/Snowboard",
-    br_b_key to "Change fire mode",
+    br_b_key to "Enter car (second)",
     br_c_key to "Crouch/Slide/Change position in car",
+    dmz_c_key to "Crouch/Slide",
     br_e_key to "Skill/Aircraft jammer",
+    dmz_e_key to "Skill/Exit car",
     br_g_key to "Revive/Pick up items",
+    dmz_g_key to "Pick up items/accept mission",
     br_f_key to "Cancel grenade/Enter-exit car/Doors/Pick up item",
+    dmz_f_key to "Doors/Pick up item",
     br_t_key to "Open-Close loot box/Jump snowboard",
-    br_h_key to "Pick up item/Open-Close loot box",
+    br_h_key to "Pick up item/Open-Close loot box/Enter car (first)",
+    dmz_h_key to "Pick up item/Open loot box",
     br_q_key to "Enter car",
     br_r_key to "Reload",
     br_v_key to "Desperado",
+    dmz_v_key to "Zipline",
+    dmz_t_key to "Enter car (second)",
     br_n_key to "1st/3rd person switch",
     br_ctrl_key to "Prone",
+    dmz_ctrl_key to "Prone/Change position in car",
     br_alt_key to "Free view",
     br_3_key to "Grenade",
     br_4_key to "Armor",
@@ -189,19 +208,29 @@ val hu = mapOf(
     gd_e_key to "Képesség 2",
     gd_r_key to "Képesség 3",
     br_tab_key to "Táska kinyit/becsuk",
+    dmz_tab_key to "Táska",
     br_space_key to "Ugrás/Fék",
-    br_b_key to "Tüzelési mód módosítása",
+    dmz_space_key to "Ugrás",
+    br_b_key to "Beszállás autóba (másodlagos)",
     br_c_key to "Guggolás/Csúszás/Hely csere autóban",
+    dmz_c_key to "Guggolás/Csúszás",
     br_e_key to "Képesség/Rakéta hárítás",
+    dmz_e_key to "Képesség/Ki szállás autóból",
     br_g_key to "Feléleszt/Elem felvétele",
+    dmz_g_key to "Elem felvétele/Küldetés elfogadása",
     br_f_key to "Mégse gránát/Be-ki szállás autóból/Ajtók/Elem felvétele",
+    dmz_f_key to "Ajtók/Elem felvétele",
     br_t_key to "Láda nyitás-zárás/Ugrás hó deszka",
     br_h_key to "Elem felvétele/Láda nyitás-zárás",
+    dmz_h_key to "Elem felvétele/Láda nyitás/Be szállás autóba (első)",
     br_q_key to "Beszállás autóba",
     br_r_key to "Újratöltés",
     br_v_key to "Desperado",
+    dmz_v_key to "Csúszka",
+    dmz_t_key to "Beszállás autóba (másodlagos)",
     br_n_key to "Belső/Külső nézet váltás",
     br_ctrl_key to "Fekvés",
+    dmz_ctrl_key to "Fekvés/Hely csere autóban",
     br_alt_key to "Szabad nézet",
     br_3_key to "Gránát",
     br_4_key to "Páncél",

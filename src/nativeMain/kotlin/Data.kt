@@ -9,6 +9,7 @@ import platform.windows.TRUE
 
 const val BR = "br"
 const val MP = "mp"
+const val DMZ = "dmz"
 
 val mpKeys = mutableListOf(
     KeyData(tabKey, mp_tab_key, loadMpKey(tabKey) ?: "TAB", loadMpKeyCode(tabKey) ?: 9, 3001),
@@ -71,22 +72,52 @@ val brKeys = mutableListOf(
     KeyData(lockMouseKey, lock_mouse_key, loadBrKey(lockMouseKey) ?: "X", loadBrKeyCode(lockMouseKey) ?: 88, 3028),
 )
 
+val dmzKeys = mutableListOf(
+    KeyData(tabKey, dmz_tab_key, loadDmzKey(tabKey) ?: "TAB", loadDmzKeyCode(tabKey) ?: 9, 3001),
+    KeyData(ctrlKey, dmz_ctrl_key, loadDmzKey(ctrlKey) ?: "CTRL", loadDmzKeyCode(ctrlKey) ?: 17, 3002),
+    KeyData(spaceKey, dmz_space_key, loadDmzKey(spaceKey) ?: "SPACE", loadDmzKeyCode(spaceKey) ?: 32, 3003),
+    KeyData(key1, mp_1_key, loadDmzKey(key1) ?: "1", loadDmzKeyCode(key1) ?: 49, 3004),
+    KeyData(key2, mp_2_key, loadDmzKey(key2) ?: "2", loadDmzKeyCode(key2) ?: 50, 3005),
+    KeyData(key4, br_4_key, loadDmzKey(key4) ?: "4", loadDmzKeyCode(key4) ?: 52, 3006),
+    KeyData(cKey, dmz_c_key, loadDmzKey(cKey) ?: "C", loadDmzKeyCode(cKey) ?: 67, 3007),
+    KeyData(eKey, dmz_e_key, loadDmzKey(eKey) ?: "E", loadDmzKeyCode(eKey) ?: 69, 3008),
+    KeyData(fKey, dmz_f_key, loadDmzKey(fKey) ?: "F", loadDmzKeyCode(fKey) ?: 70, 3009),
+    KeyData(gKey, dmz_g_key, loadDmzKey(gKey) ?: "G", loadDmzKeyCode(gKey) ?: 71, 3010),
+    KeyData(hKey, dmz_h_key, loadDmzKey(hKey) ?: "H", loadDmzKeyCode(hKey) ?: 72, 3011),
+    KeyData(escKey, mp_esc_key, loadDmzKey(escKey) ?: "ESC", loadDmzKeyCode(escKey) ?: 27, 3012),
+    KeyData(mKey, mp_m_key, loadDmzKey(mKey) ?: "M", loadDmzKeyCode(mKey) ?: 77, 3013),
+    KeyData(rKey, mp_r_key, loadDmzKey(rKey) ?: "R", loadDmzKeyCode(rKey) ?: 82, 3014),
+    KeyData(f4Key, mp_f4_key, loadDmzKey(f4Key) ?: "F4", loadDmzKeyCode(f4Key) ?: 115, 3015),
+    KeyData(oKey, br_o_key, loadDmzKey(oKey) ?: "O", loadDmzKeyCode(oKey) ?: 187, 3016),
+    KeyData(iKey, mp_i_key, loadDmzKey(iKey) ?: "Í", loadDmzKeyCode(iKey) ?: 226, 3017),
+    KeyData(key3, br_3_key, loadDmzKey(key3) ?: "3", loadDmzKeyCode(key3) ?: 51, 3018),
+    KeyData(vKey, dmz_v_key, loadDmzKey(vKey) ?: "V", loadDmzKeyCode(vKey) ?: 86, 3019),
+    KeyData(tKey, dmz_t_key, loadDmzKey(tKey) ?: "T", loadDmzKeyCode(tKey) ?: 84, 3020),
+    KeyData(lockMouseKey, lock_mouse_key, loadBrKey(lockMouseKey) ?: "X", loadBrKeyCode(lockMouseKey) ?: 88, 3021)
+)
+
 val keyMaps = mutableMapOf(
     4001 to KeyMaps("Multi Player", MP, mpKeys),
     4002 to KeyMaps("Battle Royale", BR, brKeys),
+    4003 to KeyMaps("DMZ", DMZ, dmzKeys),
 )
 
 fun loadMpKeyCode(id: String) = reg?.let { getValue(it, MP + id + code) }?.toInt()
 
 fun loadBrKeyCode(id: String) = reg?.let { getValue(it, BR + id + code) }?.toInt()
 
+fun loadDmzKeyCode(id: String) = reg?.let { getValue(it, DMZ + id + code) }?.toInt()
+
 fun loadMpKey(id: String) = reg?.let { getValue(it, MP + id) }
 
 fun loadBrKey(id: String) = reg?.let { getValue(it, BR + id) }
 
+fun loadDmzKey(id: String) = reg?.let { getValue(it, DMZ + id) }
+
 fun applyKeymap() {
     reinitMP(keyMaps[4001]?.keys ?: emptyList())
     reinitBR(keyMaps[4002]?.keys ?: emptyList())
+    reinitDMZ(keyMaps[4003]?.keys ?: emptyList())
     ConsoleManager.stopEmulator()
     DatabaseManager.launchUpdateDb()
     ConsoleManager.startCODM()
