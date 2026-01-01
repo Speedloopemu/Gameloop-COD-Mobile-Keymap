@@ -517,55 +517,114 @@ const val KEYMAP_CONTENT_146_566 = """
 </KeyMappingEx>
 """
 
+//Fall; Jump; Knife
 const val KEYMAP_CONTENT_176 = """
 <KeyMapSolution SolutionID="{&quot;id&quot;:&quot;1765593240066&quot;,&quot;type&quot;:0}" SolutionName="DMZ" InputType="1" SilentUpdate="0">
 <KeyMapping ItemName="Right Click" Point_X="0.850729" Point_Y="0.596667" Description="右键开镜" MiniVisiable="false" MiniDisable="false" ShowOnLockAsciiCode="192" AsciiCode="-2">
-<SwitchOperation Description="" Point_X="0.850729" Point_Y="0.596667" HideTips="1"/>
+<SwitchOperation Description="" EnableSwitch="Fall" Point_X="0.850729" Point_Y="0.596667" HideTips="1"/>
+<SwitchOperation Description="" EnableSwitch="Jump" Point_X="0.850729" Point_Y="0.596667" HideTips="1"/>
 </KeyMapping>
-<KeyMapping ItemName="%tabName" Point_X="0.254026" Point_Y="0.907552" Description="字母键划线" MiniVisiable="true" MiniDisable="false" AsciiCode="%tabCode"/>
+<KeyMapping ItemName="%tabName" Point_X="0.254026" Point_Y="0.907552" Description="字母键划线" MiniVisiable="true" MiniDisable="false" AsciiCode="%tabCode">
+<SwitchOperation Description="" EnableSwitch="Fall" DisableSwitch="" Point_X="0.254026" Point_Y="0.907552"/>
+<SwitchOperation Description="" EnableSwitch="Jump" DisableSwitch="" Point_X="0.254026" Point_Y="0.907552"/>
+<SwitchOperation Description="" EnableSwitch="" DisableSwitch="" Point_X="0.964861" Point_Y="0.045573"/>
+</KeyMapping>
 <KeyMapping ItemName="%ctrlName" Point_X="0.956808" Point_Y="0.936198" Description="字母键" MiniVisiable="false" MiniDisable="false" AsciiCode="%ctrlCode">
-<SwitchOperation Description="" Point_X="0.956808" Point_Y="0.936198" HideTips="1"/>
+<SwitchOperation Description="" EnableSwitch="Fall" Point_X="0.956808" Point_Y="0.936198" HideTips="1"/>
+<SwitchOperation Description="" EnableSwitch="Jump" Point_X="0.956808" Point_Y="0.936198" HideTips="1"/>
 </KeyMapping>
 <KeyMapping ItemName="%spaceName" Point_X="0.967789" Point_Y="0.710938" Description="字母键划线" MiniVisiable="true" MiniDisable="false" AsciiCode="%spaceCode">
-<SwitchOperation Description="" Point_X="0.967789" Point_Y="0.710938" HideTips="1"/>
+<SwitchOperation Description="" EnableSwitch="Brake" Point_X="0.838281" Point_Y="0.561111"/>
+<SwitchOperation Description="" EnableSwitch="Brake2" Point_X="0.838281" Point_Y="0.561111"/>
+<SwitchOperation Description="" EnableSwitch="Jump" Point_X="0.967789" Point_Y="0.710938" HideTips="1"/>
+<SwitchOperation Description="" EnableSwitch="Fall" Point_X="0.967789" Point_Y="0.710938" HideTips="1"/>
 </KeyMapping>
-<KeyMapping ItemName="%1Name" Point_X="0.443631" Point_Y="0.863281" Description="字母键划线" MiniVisiable="true" MiniDisable="false" AsciiCode="%1Code"/>
+<KeyMapping ItemName="%1Name" Point_X="0.443631" Point_Y="0.863281" Description="字母键划线" MiniVisiable="true" MiniDisable="false" AsciiCode="%1Code">
+<SwitchOperation Description="" EnableSwitch="Fall"/>
+<SwitchOperation Description="" EnableSwitch="Jump"/>
+</KeyMapping>
 <KeyMapping ItemName="%2Name" Point_X="0.551245" Point_Y="0.876302" Description="" MiniVisiable="false" MiniDisable="false" AsciiCode="%2Code">
-<SwitchOperation Description="" Point_X="0.551245" Point_Y="0.876302"/>
+<SwitchOperation Description="" EnableSwitch="Fall" Point_X="0.551245" Point_Y="0.876302"/>
+<SwitchOperation Description="" EnableSwitch="Jump" Point_X="0.551245" Point_Y="0.876302"/>
 </KeyMapping>
 <KeyMappingEx ItemName="%4Name" Point_X="0.316984" Point_Y="0.906250" Description="字母键划线" MiniVisiable="false" MiniDisable="false" NoDelete="1" SpecialFunc="0" OpGuidClass="0" InUseDisableView="1" Type="KeyMove" Offset="0.490000" Click_X="0.347731" Click_Y="0.861979" Click_Offset="0.450000" AsciiCode="%4Code" Cancel_X="0.000000" Cancel_Y="0.000000" Click_Left="1" ReleaseNow="0" Center_X="0.000000" Center_Y="0.000000" StopMoving="0" NeedPressed="1" Center_XY_Disable="1" Delay="0">
-<SwitchOperation Description="" Point_X="0.316984" Point_Y="0.906250" HideTips="1"/>
+<SwitchOperation Description="" EnableSwitch="Fall" Point_X="0.316984" Point_Y="0.906250" HideTips="0"/>
+<SwitchOperation Description="" EnableSwitch="Jump" Point_X="0.316984" Point_Y="0.906250" HideTips="0"/>
 </KeyMappingEx>
 <KeyMapping ItemName="%cName" Point_X="0.858712" Point_Y="0.947917" Description="字母键" MiniVisiable="true" MiniDisable="false" AsciiCode="%cCode">
-<SwitchOperation Description="" Point_X="0.858712" Point_Y="0.947917" HideTips="1"/>
+<SwitchOperation Description="" EnableSwitch="Fall" Point_X="0.858712" Point_Y="0.947917" HideTips="1"/>
+<SwitchOperation Description="" EnableSwitch="Jump" Point_X="0.858712" Point_Y="0.947917" HideTips="1"/>
 </KeyMapping>
-<KeyMapping ItemName="%eName" Point_X="0.967057" Point_Y="0.373698" Description="字母键" MiniVisiable="true" MiniDisable="false" AsciiCode="%eCode"/>
-<KeyMapping ItemName="%fName" Point_X="0.676428" Point_Y="0.574219" Description="字母键" MiniVisiable="true" MiniDisable="false" AsciiCode="%fCode"/>
-<KeyMapping ItemName="%gName" Point_X="0.551977" Point_Y="0.639323" Description="字母键" MiniVisiable="true" MiniDisable="false" AsciiCode="%gCode"/>
-<KeyMapping ItemName="%hName" Point_X="0.718887" Point_Y="0.542969" Description="字母键划线" MiniVisiable="true" MiniDisable="false" AsciiCode="%hCode"/>
-<KeyMapping ItemName="%escName" Point_X="0.770132" Point_Y="0.057292" Description="字母键" MiniVisiable="true" MiniDisable="false" AsciiCode="%escCode"/>
+<KeyMapping ItemName="%eName" Point_X="0.967057" Point_Y="0.373698" Description="字母键" MiniVisiable="true" MiniDisable="false" AsciiCode="%eCode">
+<SwitchOperation Description="" EnableSwitch="Fall" HideTips="0"/>
+<SwitchOperation Description="" EnableSwitch="Jump" HideTips="0"/>
+</KeyMapping>
+<KeyMapping ItemName="%qName" Point_X="0.660000" Point_Y="0.455556" Description="字母键" MiniVisiable="true" MiniDisable="false" AsciiCode="%qCode">
+<SwitchOperation Description="" EnableSwitch="Fall"/>
+<SwitchOperation Description="" EnableSwitch="Jump"/>
+</KeyMapping>
+<KeyMapping ItemName="%gName" Point_X="0.551977" Point_Y="0.639323" Description="字母键" MiniVisiable="true" MiniDisable="false" AsciiCode="%gCode">
+<SwitchOperation Description="" EnableSwitch="ByCar" Point_X="0.693265" Point_Y="0.716146"/>
+<SwitchOperation Description="" EnableSwitch="Fall" Point_X="0.551977" Point_Y="0.639323"/>
+<SwitchOperation Description="" EnableSwitch="Jump" Point_X="0.551977" Point_Y="0.639323"/>
+</KeyMapping>
+<KeyMapping ItemName="%tName" Point_X="0.675765" Point_Y="0.666176" MiniVisiable="true" MiniDisable="true" AsciiCode="%tCode">
+<SwitchOperation Description="" EnableSwitch="Fall"/>
+<SwitchOperation Description="" EnableSwitch="Jump"/>
+</KeyMapping>
+<KeyMapping ItemName="%fName" Point_X="0.718887" Point_Y="0.542969" Description="字母键划线" MiniVisiable="true" MiniDisable="false" AsciiCode="%fCode">
+<SwitchOperation Description="" EnableSwitch="GetIntoCar" Point_X="0.718887" Point_Y="0.542969" HideTips="0"/>
+<SwitchOperation Description="" EnableSwitch="GetOutCar" Point_X="0.943750" Point_Y="0.376389"/>
+<SwitchOperation Description="" EnableSwitch="ByCar" Point_X="0.693265" Point_Y="0.716146" HideTips="0"/>
+<SwitchOperation Description="" EnableSwitch="Fall" />
+<SwitchOperation Description="" EnableSwitch="Jump" />
+</KeyMapping>
+<KeyMapping ItemName="%escName" Point_X="0.770132" Point_Y="0.057292" Description="字母键" MiniVisiable="true" MiniDisable="false" AsciiCode="%escCode">
+<SwitchOperation Description="" EnableSwitch="Fall"/>
+<SwitchOperation Description="" EnableSwitch="Jump"/>
+</KeyMapping>
 <KeyMapping ItemName="%mName" Point_X="0.964861" Point_Y="0.045573" Description="字母键划线" MiniVisiable="true" MiniDisable="false" AsciiCode="%mCode"/>
-<KeyMapping ItemName="%rName" Point_X="0.766471" Point_Y="0.932292" Description="字母键" MiniVisiable="true" MiniDisable="false" AsciiCode="%rCode"/>
-<KeyMapping ItemName="%f4Name" Point_X="0.721083" Point_Y="0.055990" Description="字母键划线" MiniVisiable="true" MiniDisable="false" AsciiCode="%f4Code"/>
-<KeyMapping ItemName="%oName" Point_X="0.775256" Point_Y="0.312500" Description="字母键" MiniVisiable="true" MiniDisable="false" AsciiCode="%oCode"/>
-<KeyMapping ItemName="%iName" Point_X="0.871889" Point_Y="0.308594" Description="字母键划线" MiniVisiable="true" MiniDisable="false" AsciiCode="%iCode"/>
+<KeyMapping ItemName="%rName" Point_X="0.766471" Point_Y="0.932292" Description="字母键" MiniVisiable="true" MiniDisable="false" AsciiCode="%rCode">
+<SwitchOperation Description="" EnableSwitch="Fall"/>
+<SwitchOperation Description="" EnableSwitch="Jump"/>
+</KeyMapping>
+<KeyMapping ItemName="%f4Name" Point_X="0.721083" Point_Y="0.055990" Description="字母键划线" MiniVisiable="true" MiniDisable="false" AsciiCode="%f4Code">
+<SwitchOperation Description="" EnableSwitch="Fall"/>
+<SwitchOperation Description="" EnableSwitch="Jump"/>
+</KeyMapping>
+<KeyMapping ItemName="%oName" Point_X="0.775256" Point_Y="0.312500" Description="字母键" MiniVisiable="true" MiniDisable="false" AsciiCode="%oCode">
+<SwitchOperation Description="" EnableSwitch="Fall"/>
+<SwitchOperation Description="" EnableSwitch="Jump"/>
+</KeyMapping>
+<KeyMapping ItemName="%iName" Point_X="0.871889" Point_Y="0.308594" Description="字母键划线" MiniVisiable="true" MiniDisable="false" AsciiCode="%iCode">
+<SwitchOperation Description="" EnableSwitch="Fall"/>
+<SwitchOperation Description="" EnableSwitch="Jump"/>
+</KeyMapping>
 <KeyMappingEx ItemName="WASD" Point_X="0.163982" Point_Y="0.781250" Description="移动" MiniVisiable="false" MiniDisable="false" HideTipsAlways="1" Type="CrossKey" UP_AsciiCode="87" DOWN_AsciiCode="83" LEFT_AsciiCode="65" RIGHT_AsciiCode="68" Offset="0.070258" ShiftOffset="0.100000" Speed="0.000000">
-<SwitchOperation Description=""/>
+<SwitchOperation Description="" EnableSwitch="Fall"/>
+<SwitchOperation Description="" EnableSwitch="Jump"/>
 </KeyMappingEx>
-<KeyMappingEx ItemName="Left Mouse Button" Point_X="0.049048" Point_Y="0.519531" Description="开火" MiniVisiable="false" MiniDisable="false" Type="LClick" LOCK_AsciiCode="%lockMouseCode">
-<SwitchOperation Description="" Point_X="0.049048" Point_Y="0.519531" HideTips="1"/>
+<KeyMappingEx ItemName="Left Mouse Button" Point_X="0.049048" Point_Y="0.519531" Description="开火" MiniVisiable="false" MiniDisable="false" AutoActive="1" Type="LClick" LOCK_AsciiCode="%lockMouseCode">
+<SwitchOperation Description="" EnableSwitch="Fall" HideTips="1"/>
+<SwitchOperation Description="" EnableSwitch="Jump" HideTips="1"/>
 </KeyMappingEx>
-<KeyMappingEx ItemName="Move with Mouse" Point_X="0.663250" Point_Y="0.354167" Description="视角" MiniVisiable="false" MiniDisable="false" HideTipsAlways="1" Raw="1" Type="RClick" Offset="0.450000" LOCK_AsciiCode="%lockMouseCode" AsciiCode="%lockMouseCode" MouseResetTime="500" Sensi_X="1.000000" Sensi_Y="1.000000">
-<SwitchOperation Description=""/>
+<KeyMappingEx ItemName="Move with Mouse" Point_X="0.663250" Point_Y="0.354167" Description="视角" MiniVisiable="false" MiniDisable="false" AutoActive="1" HideTipsAlways="1" Raw="1" Type="RClick" Offset="0.450000" LOCK_AsciiCode="%lockMouseCode" AsciiCode="%lockMouseCode" MouseResetTime="1000" Sensi_X="1.000000" Sensi_Y="1.000000">
+<SwitchOperation Description="" EnableSwitch="Fall" DisableSwitch=""/>
+<SwitchOperation Description="" EnableSwitch="Jump" DisableSwitch=""/>
+<SwitchOperation Description="" EnableSwitch="GetOutCar" DisableSwitch=""/>
 </KeyMappingEx>
 <KeyMappingEx ItemName="%3Name" Point_X="0.666911" Point_Y="0.894531" Description="" MiniVisiable="false" MiniDisable="false" NoDelete="1" SpecialFunc="0" OpGuidClass="0" InUseDisableView="1" Type="KeyMove" Offset="0.490000" Click_X="0.347731" Click_Y="0.861979" Click_Offset="0.450000" AsciiCode="%3Code" Cancel_X="0.000000" Cancel_Y="0.000000" Click_Left="1" ReleaseNow="0" Center_X="0.000000" Center_Y="0.000000" StopMoving="0" NeedPressed="1" Center_XY_Disable="1" Delay="0">
-<SwitchOperation Description="" Point_X="0.666911" Point_Y="0.894531"/>
+<SwitchOperation Description="" EnableSwitch="Fall" Point_X="0.666911" Point_Y="0.894531"/>
+<SwitchOperation Description="" EnableSwitch="Jump" Point_X="0.666911" Point_Y="0.894531"/>
 </KeyMappingEx>
 <KeyMappingEx HideTipsAlways="1" Click_Y="0.855556" ItemName="滚轮切枪" Point_Y="0.863889" Type="WheelClick" Click_X="0.428125" Point_X="0.546094" Description="滚轮切枪">
-<SwitchOperation Description="" EnableSwitch="SetUp" DisableSwitch="XBtn|MapOpenFlag|ReturnSetUp" />
+<SwitchOperation Description="" EnableSwitch="Fall" DisableSwitch="XBtn|MapOpenFlag|ReturnSetUp"/>
+<SwitchOperation Description="" EnableSwitch="Jump" DisableSwitch="XBtn|MapOpenFlag|ReturnSetUp"/>
 </KeyMappingEx>
-<KeyMapping ItemName="%vName" Point_X="0.824305" Point_Y="0.552083" Description="字母键" MiniVisiable="true" MiniDisable="false" AsciiCode="%vCode"/>
-<KeyMapping ItemName="%tName" Point_X="0.693265" Point_Y="0.716146" Description="字母键" MiniVisiable="true" MiniDisable="false" AsciiCode="%tCode"/>
+<KeyMapping ItemName="%vName" Point_X="0.824305" Point_Y="0.552083" Description="字母键" MiniVisiable="true" MiniDisable="false" AsciiCode="%vCode">
+<SwitchOperation Description="" EnableSwitch="Fall"/>
+<SwitchOperation Description="" EnableSwitch="Jump"/>
+</KeyMapping>
 </KeyMapSolution>
 """
 

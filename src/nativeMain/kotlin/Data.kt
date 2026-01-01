@@ -83,7 +83,7 @@ val dmzKeys = mutableListOf(
     KeyData(eKey, dmz_e_key, loadDmzKey(eKey) ?: "E", loadDmzKeyCode(eKey) ?: 69, 3008),
     KeyData(fKey, dmz_f_key, loadDmzKey(fKey) ?: "F", loadDmzKeyCode(fKey) ?: 70, 3009),
     KeyData(gKey, dmz_g_key, loadDmzKey(gKey) ?: "G", loadDmzKeyCode(gKey) ?: 71, 3010),
-    KeyData(hKey, dmz_h_key, loadDmzKey(hKey) ?: "H", loadDmzKeyCode(hKey) ?: 72, 3011),
+    KeyData(qKey, dmz_h_key, loadBrKey(qKey) ?: "Q", loadBrKeyCode(qKey) ?: 81, 3011),
     KeyData(escKey, mp_esc_key, loadDmzKey(escKey) ?: "ESC", loadDmzKeyCode(escKey) ?: 27, 3012),
     KeyData(mKey, mp_m_key, loadDmzKey(mKey) ?: "M", loadDmzKeyCode(mKey) ?: 77, 3013),
     KeyData(rKey, mp_r_key, loadDmzKey(rKey) ?: "R", loadDmzKeyCode(rKey) ?: 82, 3014),
