@@ -452,6 +452,55 @@ fun languagePageCommand(id: Int): Int {
             reg?.let { setValue(it, lang, "hu") }
             0
         }
+        TR_LANG_RADIO_ID -> {
+            strings = tr
+            updateLangPageText()
+            updatePageVisibility()
+            reg?.let { setValue(it, lang, "tr") }
+            0
+        }
+        AR_LANG_RADIO_ID -> {
+            strings = ar
+            updateLangPageText()
+            updatePageVisibility()
+            reg?.let { setValue(it, lang, "ar") }
+            0
+        }
+        ES_LANG_RADIO_ID -> {
+            strings = es
+            updateLangPageText()
+            updatePageVisibility()
+            reg?.let { setValue(it, lang, "es") }
+            0
+        }
+        PTBR_LANG_RADIO_ID -> {
+            strings = ptBR
+            updateLangPageText()
+            updatePageVisibility()
+            reg?.let { setValue(it, lang, "pt") }
+            0
+        }
+        ID_LANG_RADIO_ID -> {
+            strings = ind
+            updateLangPageText()
+            updatePageVisibility()
+            reg?.let { setValue(it, lang, "id") }
+            0
+        }
+        RU_LANG_RADIO_ID -> {
+            strings = ru
+            updateLangPageText()
+            updatePageVisibility()
+            reg?.let { setValue(it, lang, "ru") }
+            0
+        }
+        FR_LANG_RADIO_ID -> {
+            strings = fr
+            updateLangPageText()
+            updatePageVisibility()
+            reg?.let { setValue(it, lang, "fr") }
+            0
+        }
         NEXT_BUTTON_ID -> {
             updateLicensePageText()
             start(Steps.LICENSE)
@@ -495,10 +544,16 @@ fun updateLicensePageText() {
 
 fun updateLangPageText() {
     SetWindowTextW(title, strings[welcome])
-    SetWindowTextW(text1, strings[text_1])
     SetWindowTextW(text1_1, strings[text_1_1])
     SetWindowTextW(radio1, strings[lang_en])
     SetWindowTextW(radio2, strings[lang_hu])
+    SetWindowTextW(radio3, strings[lang_tr])
+    SetWindowTextW(radio4, strings[lang_ar])
+    SetWindowTextW(radio5, strings[lang_es])
+    SetWindowTextW(radio6, strings[lang_ptbr])
+    SetWindowTextW(radio7, strings[lang_id])
+    SetWindowTextW(radio8, strings[lang_ru])
+    SetWindowTextW(radio9, strings[lang_fr])
     SetWindowTextW(nextButton, strings[next])
     SetWindowTextW(cancelButton, strings[cancel])
 }

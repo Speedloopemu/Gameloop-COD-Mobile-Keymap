@@ -7,7 +7,7 @@ enum class Steps(
     val clicked: (Int) -> Int
 ) {
     SELECT_LANGUAGE(
-        elements = listOf(title, text1_1, radio1, radio2, separator, nextButton, cancelButton),
+        elements = listOf(title, text1_1, radio1, radio2, radio3, radio4, radio5, radio6, radio7, radio8, radio9, separator, nextButton, cancelButton),
         clicked = { languagePageCommand(it) }
     ),
 

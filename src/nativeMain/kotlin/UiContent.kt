@@ -15,7 +15,7 @@ const val textHeight = 20
 const val buttonHeight = 25
 const val buttonWidth = 80
 const val radioButtonHeight = 20
-const val radioButtonWidth = 150
+const val radioButtonWidth = 250
 const val margin = 10
 
 lateinit var hwndMain: HWND
@@ -81,7 +81,7 @@ val text1_1 by lazy {
         lpWindowName = strings[text_1_1],
         dwStyle = WS_CHILD.toUInt() or WS_VISIBLE.toUInt(),
         X = margin,
-        Y = titleHeight + margin + (textHeight * 2),
+        Y = titleHeight + margin,
         nWidth = mainWidth - (margin * 2),
         nHeight = textHeight,
         hWndParent = hwndMain,
@@ -205,7 +205,7 @@ val radio1 by lazy {
         lpWindowName = strings[lang_en],
         dwStyle = WS_CHILD.toUInt() or WS_VISIBLE.toUInt() or BS_AUTORADIOBUTTON.toUInt() or WS_GROUP.toUInt(),
         X = (mainWidth - radioButtonWidth) / 2,
-        Y = margin * 2 + titleHeight + textHeight * 4,
+        Y = margin * 2 + titleHeight + textHeight * 2,
         nWidth = radioButtonWidth,
         nHeight = radioButtonHeight,
         hWndParent = hwndMain,
@@ -223,11 +223,137 @@ val radio2 by lazy {
         lpWindowName = strings[lang_hu],
         dwStyle = WS_CHILD.toUInt() or WS_VISIBLE.toUInt() or BS_AUTORADIOBUTTON.toUInt(),
         X = (mainWidth - radioButtonWidth) / 2,
-        Y = margin * 2 + titleHeight + textHeight * 4 + radioButtonHeight,
+        Y = margin * 2 + titleHeight + textHeight * 2 + radioButtonHeight,
         nWidth = radioButtonWidth,
         nHeight = radioButtonHeight,
         hWndParent = hwndMain,
         hMenu = HU_LANG_RADIO_ID.toLong().toCPointer(),
+        hInstance = null,
+        lpParam = null
+    )
+}
+
+const val TR_LANG_RADIO_ID = 2003
+val radio3 by lazy {
+    CreateWindowExW(
+        dwExStyle = 0u,
+        lpClassName = W_BUTTON,
+        lpWindowName = strings[lang_tr],
+        dwStyle = WS_CHILD.toUInt() or WS_VISIBLE.toUInt() or BS_AUTORADIOBUTTON.toUInt(),
+        X = (mainWidth - radioButtonWidth) / 2,
+        Y = margin * 2 + titleHeight + textHeight * 2 + radioButtonHeight * 2,
+        nWidth = radioButtonWidth,
+        nHeight = radioButtonHeight,
+        hWndParent = hwndMain,
+        hMenu = TR_LANG_RADIO_ID.toLong().toCPointer(),
+        hInstance = null,
+        lpParam = null
+    )
+}
+
+const val AR_LANG_RADIO_ID = 2004
+val radio4 by lazy {
+    CreateWindowExW(
+        dwExStyle = 0u,
+        lpClassName = W_BUTTON,
+        lpWindowName = strings[lang_ar],
+        dwStyle = WS_CHILD.toUInt() or WS_VISIBLE.toUInt() or BS_AUTORADIOBUTTON.toUInt(),
+        X = (mainWidth - radioButtonWidth) / 2,
+        Y = margin * 2 + titleHeight + textHeight * 2 + radioButtonHeight * 3,
+        nWidth = radioButtonWidth,
+        nHeight = radioButtonHeight,
+        hWndParent = hwndMain,
+        hMenu = AR_LANG_RADIO_ID.toLong().toCPointer(),
+        hInstance = null,
+        lpParam = null
+    )
+}
+
+const val ES_LANG_RADIO_ID = 2005
+val radio5 by lazy {
+    CreateWindowExW(
+        dwExStyle = 0u,
+        lpClassName = W_BUTTON,
+        lpWindowName = strings[lang_es],
+        dwStyle = WS_CHILD.toUInt() or WS_VISIBLE.toUInt() or BS_AUTORADIOBUTTON.toUInt(),
+        X = (mainWidth - radioButtonWidth) / 2,
+        Y = margin * 2 + titleHeight + textHeight * 2 + radioButtonHeight * 4,
+        nWidth = radioButtonWidth,
+        nHeight = radioButtonHeight,
+        hWndParent = hwndMain,
+        hMenu = ES_LANG_RADIO_ID.toLong().toCPointer(),
+        hInstance = null,
+        lpParam = null
+    )
+}
+
+const val PTBR_LANG_RADIO_ID = 2006
+val radio6 by lazy {
+    CreateWindowExW(
+        dwExStyle = 0u,
+        lpClassName = W_BUTTON,
+        lpWindowName = strings[lang_ptbr],
+        dwStyle = WS_CHILD.toUInt() or WS_VISIBLE.toUInt() or BS_AUTORADIOBUTTON.toUInt(),
+        X = (mainWidth - radioButtonWidth) / 2,
+        Y = margin * 2 + titleHeight + textHeight * 2 + radioButtonHeight * 5,
+        nWidth = radioButtonWidth,
+        nHeight = radioButtonHeight,
+        hWndParent = hwndMain,
+        hMenu = PTBR_LANG_RADIO_ID.toLong().toCPointer(),
+        hInstance = null,
+        lpParam = null
+    )
+}
+
+const val ID_LANG_RADIO_ID = 2007
+val radio7 by lazy {
+    CreateWindowExW(
+        dwExStyle = 0u,
+        lpClassName = W_BUTTON,
+        lpWindowName = strings[lang_id],
+        dwStyle = WS_CHILD.toUInt() or WS_VISIBLE.toUInt() or BS_AUTORADIOBUTTON.toUInt(),
+        X = (mainWidth - radioButtonWidth) / 2,
+        Y = margin * 2 + titleHeight + textHeight * 2 + radioButtonHeight * 6,
+        nWidth = radioButtonWidth,
+        nHeight = radioButtonHeight,
+        hWndParent = hwndMain,
+        hMenu = ID_LANG_RADIO_ID.toLong().toCPointer(),
+        hInstance = null,
+        lpParam = null
+    )
+}
+
+const val RU_LANG_RADIO_ID = 2008
+val radio8 by lazy {
+    CreateWindowExW(
+        dwExStyle = 0u,
+        lpClassName = W_BUTTON,
+        lpWindowName = strings[lang_ru],
+        dwStyle = WS_CHILD.toUInt() or WS_VISIBLE.toUInt() or BS_AUTORADIOBUTTON.toUInt(),
+        X = (mainWidth - radioButtonWidth) / 2,
+        Y = margin * 2 + titleHeight + textHeight * 2 + radioButtonHeight * 7,
+        nWidth = radioButtonWidth,
+        nHeight = radioButtonHeight,
+        hWndParent = hwndMain,
+        hMenu = RU_LANG_RADIO_ID.toLong().toCPointer(),
+        hInstance = null,
+        lpParam = null
+    )
+}
+
+const val FR_LANG_RADIO_ID = 2009
+val radio9 by lazy {
+    CreateWindowExW(
+        dwExStyle = 0u,
+        lpClassName = W_BUTTON,
+        lpWindowName = strings[lang_fr],
+        dwStyle = WS_CHILD.toUInt() or WS_VISIBLE.toUInt() or BS_AUTORADIOBUTTON.toUInt(),
+        X = (mainWidth - radioButtonWidth) / 2,
+        Y = margin * 2 + titleHeight + textHeight * 2 + radioButtonHeight * 8,
+        nWidth = radioButtonWidth,
+        nHeight = radioButtonHeight,
+        hWndParent = hwndMain,
+        hMenu = FR_LANG_RADIO_ID.toLong().toCPointer(),
         hInstance = null,
         lpParam = null
     )
