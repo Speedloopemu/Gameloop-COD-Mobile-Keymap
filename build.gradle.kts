@@ -38,7 +38,8 @@ kotlin {
                     "-Wl,-Bstatic",
                     "-lwinpthread",
                     "-Wl,-Bdynamic",
-                    "-Wl,-subsystem,windows"
+                    "-Wl,-subsystem,windows",
+                    "src/nativeMain/resources/resource.res"
                 )
             }
         }

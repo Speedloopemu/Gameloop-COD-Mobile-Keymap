@@ -12,6 +12,13 @@ fun main() = memScoped {
         lpszClassName = className.wcstr.ptr
         hCursor = LoadCursorW(null, IDC_ARROW)
         hbrBackground = GetStockObject(WHITE_BRUSH)?.reinterpret()
+        hIcon = LoadImageW(
+            instance,
+            MAKEINTRESOURCEW(IDI_APP_ICON),
+            IMAGE_ICON.toUInt(),
+            0, 0,
+            LR_DEFAULTSIZE.toUInt() or LR_SHARED.toUInt()
+        )?.reinterpret()
     }
 
     RegisterClassW(wndClass.ptr)
@@ -105,3 +112,9 @@ fun getValue(hKey: HKEY, name: String): String? = memScoped {
 
     return@memScoped if (result == ERROR_SUCCESS) buffer.toKString() else null
 }
+
+@OptIn(ExperimentalForeignApi::class)
+fun MAKEINTRESOURCEW(id: Int): CPointer<UShortVar>? =
+    id.toLong().toCPointer()
+
+const val IDI_APP_ICON = 101
